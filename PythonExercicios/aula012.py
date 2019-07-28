@@ -34,13 +34,13 @@ conv = int(input("Digite a opção desejada: "))
 
 if(conv == 1):
     b = bin(n)
-    print("O número {} em binário é {}." .format(n, b))
+    print("O número {} em binário é {}." .format(n, b[2:]))
 elif(conv == 2):
     o = oct(n)
-    print("O número {} em octal é {}." .format(n, o))
+    print("O número {} em octal é {}." .format(n, o[2:]))
 elif(conv == 3):
     h = hex(n)
-    print("O número {} em hexadecimal é {}" .format(n, h))
+    print("O número {} em hexadecimal é {}" .format(n, h[2:]))
 else:
     print("Opção não disponível.")
 
@@ -131,7 +131,7 @@ print("Faça um programa que calcule o IMC")
 
 altura = float(input("Digite sua altura: "))
 peso = float(input("Digite seu peso: "))
-imc = peso/(altura*altura)
+imc = peso/(altura ** 2)
 
 if(imc < 18.5):
     print("Seu IMC é {:.1f}. Você esta abaixo do Peso". format(imc))

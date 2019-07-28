@@ -24,7 +24,7 @@ print("\n\nVocê jogou {} o adversário jogou {}." .format(player, npc))
 if(player == 'PEDRA' and npc == 'TESOURA' or player == 'TESOURA' and npc == 'PAPEL' or player == 'PAPEL' and npc == 'PEDRA'):
     print("\nVOCÊ VENCEU!")
 elif(npc == 'PEDRA' and player == 'TESOURA' or npc == 'TESOURA' and player == 'PAPEL' or npc == 'PAPEL' and player == 'PEDRA'):
-    print("\nVOCÊ PERDEU!\nCOMO TUDO NA SUA VIDA!\nSEU FRACASSADO!!")
+    print("\nVOCÊ PERDEU!")
 elif(player == npc):
     print("\nEMPATE!")
 else:
